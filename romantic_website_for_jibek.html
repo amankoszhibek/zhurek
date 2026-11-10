@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Для моей Жібек ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Georgia, serif;
+  color: #713d53;
+  background: linear-gradient(145deg,#fff0f5,#ffe0eb,#fff5f8);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: 65px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: clamp(45px,10vw,78px);
+  color: #d75d91;
+  margin: 20px;
+}
+
+h2 {
+  color: #d75d91;
+  font-size: clamp(25px,6vw,35px);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 19px;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 12px auto;
+}
+
+.heart {
+  font-size: 85px;
+  animation: beat 1.2s infinite;
+}
+
+@keyframes beat {
+  50% { transform: scale(1.2); }
+}
+
+button {
+  background: #e879a6;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 17px 30px;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 20px;
+  box-shadow: 0 6px 20px #e879a655;
+  transition: .3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+  background: #d75d91;
+}
+
+.card {
+  background: #ffffffc9;
+  border: 1px solid white;
+  border-radius: 28px;
+  padding: 35px 25px;
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 10px 35px #d75d9120;
+}
+
+.small {
+  font-size: 14px;
+  color: #a66c83;
+}
+
+footer {
+  padding: 35px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Секретное письмо */
+
+.secret-heart {
+  font-size: 110px;
+  background: transparent;
+  box-shadow: none;
+  animation: beat 1.2s infinite;
+}
+
+.secret-heart:hover {
+  background: transparent;
+}
+
+.letter {
+  display: none;
+  max-width: 550px;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 25px;
+  background: white;
+  box-shadow: 0 10px 40px #d75d9130;
+  animation: appear 1s ease;
+}
+
+.letter.open {
+  display: block;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Летающие сердечки */
+
+.floating {
+  position: fixed;
+  bottom: -40px;
+  pointer-events: none;
+  animation: rise 7s linear forwards;
+  z-index: 10;
+}
+
+@keyframes rise {
+  to {
+    transform: translateY(-110vh) rotate(30deg);
+    opacity: 0;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ПЕРВАЯ СТРАНИЦА -->
+
+<section>
+  <div class="heart">💗</div>
+
+  <p>Для самого дорогого человека в моей жизни</p>
+
+  <h1>Жібек</h1>
+
+  <h2>Моя көжегім ❤️</h2>
+
+  <p>
+    У меня есть кое-что особенное для тебя...
+  </p>
+
+  <button onclick="goTo('story')">
+    Открыть моё сердце 💌
+  </button>
+</section>
+
+
+<!-- НАША ИСТОРИЯ -->
+
+<section id="story">
+  <div class="card">
+
+    <h2>Наша история 💞</h2>
+
+    <div class="heart">🌷</div>
+
+    <h1>3 года</h1>
+
+    <p>
+      Три года рядом с тобой.
+      Три года воспоминаний, улыбок,
+      счастливых моментов и нашей любви.
+    </p>
+
+    <p>
+      И знаешь что?
+      Я бы снова выбрал именно тебя.
+      Снова и снова.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- ЗА ЧТО Я ТЕБЯ ЛЮБЛЮ -->
+
+<section>
+  <div class="card">
+
+    <h2>За что я тебя люблю? ❤️</h2>
+
+    <div class="heart">🌸</div>
+
+    <p>
+      За всё, моя любимая.
+      За твою улыбку, за твой голос,
+      за твой характер, за твои глаза.
+    </p>
+
+    <p>
+      За то, какая ты есть.
+      Даже за маленькие мелочи,
+      которые, возможно, ты сама не замечаешь.
+    </p>
+
+    <p>
+      Мне не нужна идеальная девушка.
+      Мне нужна ты, моя Жібек.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- МОИ ОБЕЩАНИЯ -->
+
+<section>
+  <div class="card">
+
+    <h2>Хочу, чтобы ты знала... 💗</h2>
+
+    <p>
+      Я не знаю, что приготовила нам жизнь,
+      но я очень хочу проходить её вместе с тобой.
+    </p>
+
+    <p>
+      Хочу видеть твою улыбку,
+      поддерживать тебя в трудные дни,
+      радоваться твоим победам
+      и создавать с тобой ещё тысячи воспоминаний.
+    </p>
+
+    <p>
+      Мен сені қатты жақсы көремін!
+    </p>
+
+    <div class="heart">❤️</div>
+
+  </div>
+</section>
+
+
+<!-- ФИНАЛ -->
+
+<section>
+  <div class="card">
+
+    <div class="heart">💗</div>
+
+    <h1>Жібек</h1>
+
+    <h2>Ты — моё счастье.</h2>
+
+    <p>
+      Спасибо, что ты есть в моей жизни.
+    </p>
+
+    <button onclick="goTo('secret')">
+      У меня есть ещё кое-что... 💌
+    </button>
+
+  </div>
+</section>
+
+
+<!-- СЕКРЕТНОЕ ПИСЬМО -->
+
+<section id="secret">
+
+  <h2>💌 Только для тебя, көжегім</h2>
+
+  <p>
+    Здесь спрятаны слова, которые идут прямо от моего сердца.
+  </p>
+
+  <button class="secret-heart" onclick="openSecret()">
+    ❤️
+  </button>
+
+  <p>Нажми на сердечко, любимая</p>
+
+  <div class="letter" id="secretLetter">
+
+    <h2>Моя любимая Жібек ❤️</h2>
+
+    <p>
+      Знаешь, иногда мне сложно подобрать слова,
+      чтобы объяснить, насколько сильно я тебя люблю.
+    </p>
+
+    <p>
+      Уже три года ты являешься частью моей жизни.
+      И за это время я понял одну вещь:
+      мне не нужно ничего идеального,
+      потому что у меня есть ты.
+    </p>
+
+    <p>
+      Я люблю тебя за каждую мелочь.
+      За твой смех, за твой взгляд,
+      за твои привычки и даже за те моменты,
+      когда мы просто молчим рядом.
+    </p>
+
+    <p>
+      Я хочу, чтобы ты всегда помнила:
+      ты особенная для меня.
+      Я хочу продолжать выбирать тебя
+      каждый день, каждую минуту.
+    </p>
+
+    <p>
+      Я хочу ещё много лет держать тебя за руку,
+      обнимать тебя и говорить,
+      как сильно ты мне дорога.
+    </p>
+
+    <h2>Мен сені сүйемін, көжегім! ❤️</h2>
+
+    <p>
+      Три года — это только начало нашей истории.
+    </p>
+
+    <div class="heart">💗</div>
+
+    <h2>Навсегда твой ❤️</h2>
+
+  </div>
+
+</section>
+
+
+<footer>
+  Сделано с огромной любовью для Жібек 💗
+  <p class="small">
+    Только ты и я. Наша история продолжается...
+  </p>
+</footer>
+
+
+<script>
+
+// Плавная прокрутка
+function goTo(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+
+// Секретное письмо
+function openSecret() {
+
+  const letter = document.getElementById('secretLetter');
+
+  if (!letter.classList.contains('open')) {
+
+    letter.classList.add('open');
+
+    document.querySelector('.secret-heart').textContent = '💖';
+
+    createHearts();
+
+    setTimeout(() => {
+      letter.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+    }, 300);
+  }
+
+}
+
+// Анимация сердечек
+function createHearts() {
+
+  for (let i = 0; i < 40; i++) {
+
+    setTimeout(() => {
+
+      const heart = document.createElement('div');
+
+      heart.className = 'floating';
+
+      const emojis = ['❤️','💕','💗','🌸','💖'];
+
+      heart.textContent =
+        emojis[Math.floor(Math.random() * emojis.length)];
+
+      heart.style.left = Math.random() * 100 + 'vw';
+
+      heart.style.fontSize =
+        (20 + Math.random() * 30) + 'px';
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => heart.remove(), 7000);
+
+    }, i * 100);
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>
